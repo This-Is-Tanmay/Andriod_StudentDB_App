@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
+
+    <!-- Screen Title Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Faculty Database"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Scrollable Menu Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <!-- 1. Add Faculty Info -->
+            <Button
+                android:id="@+id/btnGoToAddFaculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD FACULTY INFO"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 2. View Faculty Info -->
+            <Button
+                android:id="@+id/btnGoToViewFaculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VIEW FACULTY INFO"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 3. Update Faculty Info -->
+            <Button
+                android:id="@+id/btnGoToUpdateFaculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UPDATE FACULTY INFO"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 4. Delete Faculty Info -->
+            <Button
+                android:id="@+id/btnGoToDeleteFaculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DELETE FACULTY INFO"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 5. Logout Button -->
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGOUT"
+                android:layout_marginBottom="16dp" />
+
+            <!-- 6. Switch to Student Button -->
+            <Button
+                android:id="@+id/btnSwitchToStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SWITCH TO STUDENT"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

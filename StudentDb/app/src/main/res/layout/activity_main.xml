@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
+
+    <!-- Screen Title Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Database"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Scrollable Menu Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <!-- 1. Explicit Intent Button: Add Student -->
+            <Button
+                android:id="@+id/btnGoToAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Student"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 2. Explicit Intent Button: View Students -->
+            <Button
+                android:id="@+id/btnGoToView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Students"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 3. Explicit Intent Button: Update Student -->
+            <Button
+                android:id="@+id/btnGoToUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Student"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 4. Explicit Intent Button: Delete Student -->
+            <Button
+                android:id="@+id/btnGoToDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Student"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 5. Implicit Intent Button: Open Website -->
+            <Button
+                android:id="@+id/btnOpenWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Open Website"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 6. Logout Button -->
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGOUT"
+                android:layout_marginBottom="16dp" />
+
+            <!-- 7. Switch to Faculty Button -->
+            <Button
+                android:id="@+id/btnSwitchToFaculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SWITCH TO FACULTY"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

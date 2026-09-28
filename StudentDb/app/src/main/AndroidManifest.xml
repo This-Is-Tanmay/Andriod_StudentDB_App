@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Notification permission for Android 13 (API 33) and above -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentDb">
+
+        <!-- Login Activity as MAIN Launcher -->
+        <activity
+            android:name="com.example.studentdatabase.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Signup Activity -->
+        <activity
+            android:name="com.example.studentdatabase.SignupActivity"
+            android:exported="false"
+            android:label="Sign Up" />
+
+        <!-- Student Database Main Menu Activity -->
+        <activity
+            android:name="com.example.studentdatabase.MainActivity"
+            android:exported="false"
+            android:label="Student Database" />
+
+        <!-- Student Sub Activities -->
+        <activity
+            android:name="com.example.studentdatabase.AddStudentActivity"
+            android:exported="false"
+            android:label="Add Student" />
+
+        <activity
+            android:name="com.example.studentdatabase.ViewStudentActivity"
+            android:exported="false"
+            android:label="View Students" />
+
+        <activity
+            android:name="com.example.studentdatabase.UpdateStudentActivity"
+            android:exported="false"
+            android:label="Update Student" />
+
+        <activity
+            android:name="com.example.studentdatabase.DeleteStudentActivity"
+            android:exported="false"
+            android:label="Delete Student" />
+
+        <!-- Faculty Main Menu Activity -->
+        <activity
+            android:name="com.example.studentdatabase.FacultyMainActivity"
+            android:exported="false"
+            android:label="Faculty Database" />
+
+        <!-- Faculty Sub Activities -->
+        <activity
+            android:name="com.example.studentdatabase.AddFacultyActivity"
+            android:exported="false"
+            android:label="Add Faculty" />
+
+        <activity
+            android:name="com.example.studentdatabase.ViewFacultyActivity"
+            android:exported="false"
+            android:label="View Faculty" />
+
+        <activity
+            android:name="com.example.studentdatabase.UpdateFacultyActivity"
+            android:exported="false"
+            android:label="Update Faculty" />
+
+        <activity
+            android:name="com.example.studentdatabase.DeleteFacultyActivity"
+            android:exported="false"
+            android:label="Delete Faculty" />
+
+    </application>
+
+</manifest>

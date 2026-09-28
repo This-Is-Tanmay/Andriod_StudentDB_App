@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
+
+    <!-- Pinned Header with Back Button and Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Student Record"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Scrollable Form Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Student ID Label & Input -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student ID:"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etStudentId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Student ID (e.g. 101)"
+                android:inputType="text"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Student Name Label & Input -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Name:"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etStudentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Student Name"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Student Course Label & Input -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Course:"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etStudentCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Course (e.g. B.Tech)"
+                android:inputType="text"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Student Marks Label & Input -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Marks:"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etStudentMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Marks (e.g. 85)"
+                android:inputType="number"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Take Photo Button -->
+            <Button
+                android:id="@+id/btnTakePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TAKE PHOTO"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Captured Photo Label & ImageView -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Captured Photo:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+
+            <ImageView
+                android:id="@+id/imgStudentCamera"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="#CCCCCC"
+                android:scaleType="centerCrop"
+                android:contentDescription="Captured Student Photo"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Buttons Layout -->
+            <Button
+                android:id="@+id/btnSaveStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Student"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnClearFields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clear" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

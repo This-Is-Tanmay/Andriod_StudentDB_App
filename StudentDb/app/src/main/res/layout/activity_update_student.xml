@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
+
+    <!-- Pinned Header with Back Button and Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+    </LinearLayout>
+
+    <!-- Scrollable Form Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Student ID to search -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student ID (to update):"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etUpdateId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Student ID"
+                android:inputType="text"
+                android:layout_marginBottom="12dp" />
+
+            <!-- New Student Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Student Name:"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etUpdateName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter New Name"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="12dp" />
+
+            <!-- New Student Course -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Student Course:"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etUpdateCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter New Course"
+                android:inputType="text"
+                android:layout_marginBottom="12dp" />
+
+            <!-- New Student Marks -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Student Marks:"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etUpdateMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter New Marks"
+                android:inputType="number"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Update Button -->
+            <Button
+                android:id="@+id/btnUpdateStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Student" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
